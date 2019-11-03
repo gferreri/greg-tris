@@ -1,0 +1,23 @@
+body{
+    background-color: #e2e2e2;
+}
+
+h1{
+    color: #555555;
+}
+.dcoder{
+    color: #777777;
+}
+
+#board {
+    border: solid 1px black;
+}
+
+.square {
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+    width: 50px;
+}

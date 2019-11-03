@@ -1,0 +1,14 @@
+{
+  "name": "tetris",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Greg Ferreri",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^3.6.4"
+  }
+}

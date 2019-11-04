@@ -7,9 +7,11 @@
   "private": false,
   "scripts": {
     "pretty": "prettier ./src/**/*.ts --no-semi",
-    "build": "tsc"
+    "build": "NODE_ENV=production parcel build src/index.html --public-url ."
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "parcel": "^1.12.4",
     "typescript": "^3.6.4"
   },
   "dependencies": {

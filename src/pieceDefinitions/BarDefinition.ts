@@ -1,6 +1,8 @@
-/// <reference path="SquareDefinition.ts" />
+import {} from './SquareDefinition'
 
-const BarDefinition: Array<SquareDefinition> = [
+import { SquareDefinition } from './SquareDefinition'
+
+export const BarDefinition: Array<SquareDefinition> = [
   {
     initialPosition: [7, 0],
     rotations: [[1, 1], [-1, 2], [-2, -2], [2, -1]]

@@ -1,4 +1,4 @@
-const boardWidth = 500
-const columnsCount = 15
-const rowCount = 24
-const squareLength = boardWidth / columnsCount
+export const boardWidth = 500
+export const columnsCount = 15
+export const rowCount = 24
+export const squareLength = boardWidth / columnsCount

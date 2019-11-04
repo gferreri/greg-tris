@@ -1,4 +1,6 @@
-class Row {
+import { Square } from './Square'
+import { columnsCount, rowCount} from './constants'
+export class Row {
 	columns: Array<Square | null>
 	constructor () {
 		this.columns = []
@@ -8,7 +10,7 @@ class Row {
 	}
 }
 
-class Board {
+export class Board {
 	rows: Row[]
 
 	constructor (){

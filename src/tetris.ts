@@ -1,28 +1,8 @@
-/// <reference path="PieceFactory.ts" />
-/// <reference path="Piece.ts" />
-/// <reference path="Board.ts" />
-class Square {
+import { PieceFactory } from './PieceFactory'
+import { Piece } from './Piece'
+import { Board } from './Board'
+import { squareLength } from './constants'
 
-	rotationIndex: number = 0
-
-	constructor (public x: number, public y: number, public color: string,
-		private rotations: Array<Rotation>) {
-	}
-
-	rotate(clockwise: any){
-		let rotateY = this.rotations[this.rotationIndex][1]
-		let rotateX = this.rotations[this.rotationIndex][0]
-		if (!clockwise) {
-			rotateY *= 1
-			rotateX *= 1
-		}
-
-		this.x += rotateX
-		this.y += rotateY
-
-		this.rotationIndex = (this.rotationIndex + 1) % 4
-	}
-}
 
 const board = new Board()
 

@@ -1,4 +1,7 @@
-class Piece {
+import { Square } from './Square'
+import { Board } from './Board'
+import { rowCount, columnsCount } from './constants'
+export class Piece {
 	squares: Array<Square>
 	constructor(private board: Board){
 		this.squares = []

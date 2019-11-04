@@ -1,6 +1,6 @@
-type Rotation = [number, number]
+export type Rotation = [number, number]
 
-type SquareDefinition = {
+export type SquareDefinition = {
   initialPosition: [number, number]
   rotations: Array<Rotation>
 }

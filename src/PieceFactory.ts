@@ -1,7 +1,9 @@
-/// <reference path="./pieceDefinitions/BoxDefinition.ts" />
-/// <reference path="./pieceDefinitions/SquareDefinition.ts" />
-/// <reference path="./pieceDefinitions/BarDefinition.ts" />
-/// <reference path="./pieceDefinitions/LDefinition.ts" />
+import { BoxDefinition } from './pieceDefinitions/BoxDefinition'
+import { BarDefinition } from './pieceDefinitions/BarDefinition'
+import { LDefinition } from './pieceDefinitions/LDefinition'
+import { Square } from './Square'
+import { Board } from './Board'
+import { Piece } from './Piece'
 
 const colors = [
 	'#1E1E24',
@@ -13,7 +15,7 @@ const colors = [
 
 const pieces = [LDefinition, BarDefinition, BoxDefinition]
 
-class PieceFactory {
+export class PieceFactory {
 
 	constructor (private board: Board) { }
 
@@ -24,7 +26,7 @@ class PieceFactory {
 		piece.squares = pieceDefinition.map(def => new Square(def.initialPosition[0], def.initialPosition[1], color, def.rotations))
 
 		for (let square of piece.squares) {
-			board.rows[square.y].columns[square.x] = square
+			this.board.rows[square.y].columns[square.x] = square
 		}
 		return piece
 	}

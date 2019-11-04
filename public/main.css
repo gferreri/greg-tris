@@ -1,16 +1,38 @@
 body{
-    background-color: #e2e2e2;
+    background: rgb(136,136,148);
+    background: linear-gradient(90deg, rgba(136,136,148,1) 39%, rgba(52,103,113,1) 100%);
 }
 
 h1{
     color: #555555;
 }
+
+#gameWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
 .dcoder{
     color: #777777;
 }
 
 #board {
     border: solid 1px black;
+    background-color: #1c2b30;
+}
+
+#scoreBox {
+    margin-left: 3rem;
+    border: solid 1px white;
+    height: 3rem;
+    line-height: 3rem;
+    width: 10rem;
+    text-align: center;
+    color: white;
+}
+
+#score {
+    text-align: center;
 }
 
 .square {
